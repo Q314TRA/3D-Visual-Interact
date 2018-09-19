@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+ 
+<html lang="es">
+ 
+<head>
+<title>Titulo de la web</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/responsive.css" />
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=0,maximum-scale=1,user-scalable=no">
+<!--
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="alternate" title="Pozolería RSS" type="application/rss+xml" href="/feed.rss" /> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+ 
+  <body>
+  <a href="#navigation" class="nav-triger">
+    menu <span></span>
+  </a>
+  <nav class="nav-container" id="navigation">
+    <ul class="nav">
+      <li><a onclick="subMenu();" >Race Line </a></li>
+
+      <div id="submenuDiv" class="submenu submenuO">
+        <li><a href="editar.html">Summer</a></li>
+        <li><a href="">Winter</a></li>
+      </div>
+
+      <li><a href="#0">Professional Line</a></li>
+      <li><a href="#0">Sport Line</a></li>
+      <li><a href="#0">Leisure Line</a></li>
+    </ul>
+  </nav>
+  <div class="overlay"></div>
+
+  <main class="flex">
+    <!-- Controles -->
+    <div class="menuControles flex">
+      <div class="controles flex fullCenter">
+        <img src="img/Boton_Text.svg" onclick="openPaleta();">
+        <span>Colour Palette</span>
+        <img src="img/Boton_LogoImage.svg" onclick="openLogo();">
+        <span>Logo/Image</span>
+        <img src="img/Boton_ColourPalette.svg" onclick="verTextos();">
+        <span>Text</span>
+      </div>
+      <div class="background" id="backCont" onclick="backgroundColor();"></div>
+      <span class="backSpan">Background</span>
+    </div>
+    <div class="backgroundCambio flex fullCenter" id="backCambioColor">
+      <div class="backCamb-col1" id="clrOscuro" onclick="colorWorkSpaceOscuro();" ></div>
+      <div class="backCamb-col2" id="clrGris" onclick="colorWorkSpaceGris();"></div>
+    </div>
+    <!-- /Controles -->
+
+    <!-- Paleta de Colores -->
+
+    <div class="paletaColores pclr flex" id="paletaCl">
+      <div class="colores flex">
+        <div class="clr color1" onclick="verColores();" ></div><span>Color 1</span>
+        <div class="clr color2" onclick="verColores();" ></div><span>Color 2</span>
+        <div class="clr color3" onclick="verColores();" ></div><span>Color 3</span>
+        <div class="clr color4" onclick="verColores();" ></div><span>Color 4</span>
+        <div class="ruletaColor flex" id="clrDiv">
+          <div class="rlt rltCol1"></div>
+          <div class="rlt rltCol2"></div>
+          <div class="rlt rltCol3"></div>
+          <div class="rlt rltCol4"></div>
+          <div class="rlt rltCol5"></div>
+          <div class="rlt rltCol6"></div>
+          <div class="rlt rltCol7"></div>
+
+          <div class="rlt rltCol1"></div>
+          <div class="rlt rltCol2"></div>
+          <div class="rlt rltCol3"></div>
+          <div class="rlt rltCol4"></div>
+          <div class="rlt rltCol5"></div>
+          <div class="rlt rltCol6"></div>
+          <div class="rlt rltCol7"></div>
+
+          <div class="rlt rltCol1"></div>
+          <div class="rlt rltCol2"></div>
+          <div class="rlt rltCol3"></div>
+          <div class="rlt rltCol4"></div>
+          <div class="rlt rltCol5"></div>
+          <div class="rlt rltCol6"></div>
+          <div class="rlt rltCol7"></div>
+
+          <div class="rlt rltCol1"></div>
+          <div class="rlt rltCol2"></div>
+          <div class="rlt rltCol3"></div>
+          <div class="rlt rltCol4"></div>
+          <div class="rlt rltCol5"></div>
+          <div class="rlt rltCol6"></div>
+          <div class="rlt rltCol7"></div>
+
+          <div class="rlt rltCol1"></div>
+          <div class="rlt rltCol2"></div>
+          <div class="rlt rltCol3"></div>
+          <div class="rlt rltCol4"></div>
+          <div class="rlt rltCol5"></div>
+          <div class="rlt rltCol6"></div>
+          <div class="rlt rltCol7"></div>
+
+        </div>
+      </div>  
+      <a class="save" href="">Save</a>
+    </div>
+
+    <!-- /Paleta de Colores -->
+
+    <!-- Logo de imagen -->
+    <div class="logoImg lI flex" id="logoImagen">
+
+      <form action="#type your action here" method="POST" enctype="multipart/form-data" name="myForm">
+      <div id="yourBtn" onclick="getFile()"></div>
+      <div style='height: 0px; width: 0px;overflow:hidden;'>
+        <input id="upfile" type="file" value="upload" onchange="sub(this)"/></div>
+      <p>Logotype 1</p>
+      </form>
+      <form action="#type your action here" method="POST" enctype="multipart/form-data" name="myForm">
+      <div id="yourBtn" onclick="getFile()"></div>
+      <div style='height: 0px; width: 0px;overflow:hidden;'>
+        <input id="upfile" type="file" value="upload" onchange="sub(this)"/></div>
+      <p>Logotype 1</p>
+      </form>
+      <form action="#type your action here" method="POST" enctype="multipart/form-data" name="myForm">
+      <div id="yourBtn" onclick="getFile()"></div>
+      <div style='height: 0px; width: 0px;overflow:hidden;'>
+        <input id="upfile" type="file" value="upload" onchange="sub(this)"/></div>
+      <p>Logotype 1</p>
+      </form>
+      <form action="#type your action here" method="POST" enctype="multipart/form-data" name="myForm">
+      <div id="yourBtn" onclick="getFile()"></div>
+      <div style='height: 0px; width: 0px;overflow:hidden;'>
+        <input id="upfile" type="file" value="upload" onchange="sub(this)"/></div>
+      <p>Logotype 1</p>
+      </form>
+
+      <p class="explic">When your logos are uploaded click on the logo and then click on the area where you want to place the logo.</p>
+
+      <a class="save" href="">Save</a>
+
+    </div>
+
+    <!-- /Logo de imagen -->
+
+    <!-- Texto -->
+    <div class="textoDiv flex" id="txtDiv">
+      <textarea rows="6" class="txtArea" placeholder="Your Text"></textarea>
+      <span>Text</span>
+      <div class="styled-select slate">
+        <select>
+          <option></option>
+          <option>The second option</option>
+          <option>The third option</option>
+        </select>
+      </div>
+      <span>Choose a font</span>
+      <div class="styled-select slate">
+        <select>
+          <option></option>
+          <option>The second option</option>
+          <option>The third option</option>
+        </select>
+      </div>
+      <span>Font size</span>
+      <a class="save" href="">Save</a>
+
+      
+    </div>
+
+    <!-- /Texto -->
+
+    <img class="logo" src="img/Logotipo_BR.svg">
+    <!-- Vitrina -->
+    <div class="flex workSpace" id="workspace">
+
+      <!-- Modelado -->
+      <div class="flex fullCenter modelado">
+        <img src="img/Chaqueta_Color.svg">
+        <a href="home.html" class="btnFinalizar">FINISH</a>
+      </div>
+      <!-- /Modelado -->
+
+      <!-- Carusel -->
+      <div class="flex fullCenter carusel">
+        <img src="img/Chaqueta_Gris-23.svg">
+        <img src="img/Chaqueta_Gris-23.svg">
+        <img src="img/Chaqueta_Gris-23.svg">
+        <img src="img/Chaqueta_Gris-23.svg">
+        <img src="img/Chaqueta_Gris-23.svg">
+      </div>
+      <!-- /Carusel -->
+
+
+    </div>
+    <!-- / Vitrina -->
+    <!-- Extras -->
+    <div class="flex extras" id="extra">
+      <div class="flex fullCenter header">
+       <img src="img/Logotipo_BR.svg">
+      </div>
+      <div class="flex fullCenter shared">
+        <img src="img/Logo_Fb.svg">
+        <img src="img/Logo_Twitter.svg">
+      </div>
+      <a class="btnShared" href="">Design</a>
+    </div>
+    <!-- Extras -->
+  </main>
+
+
+
+
+  <script>
+    var navTrigger = document.getElementsByClassName('nav-triger')[0],
+      body = document.getElementsByTagName('body')[0];
+    navTrigger.addEventListener('click', toggleNavigation);
+
+    function toggleNavigation(event) {
+      event.preventDefault();
+      body.classList.toggle('nav-open');
+    }
+  </script>
+
+  <script type="text/javascript" src="js/funciones.js"></script>
+
+  <script>
+   function getFile(){
+     document.getElementById("upfile").click();
+   }
+   function sub(obj){
+      var file = obj.value;
+      var fileName = file.split("\\");
+      document.getElementById("yourBtn").innerHTML = fileName[fileName.length-1];
+      document.myForm.submit();
+      event.preventDefault();
+    }
+  </script>
+  </body>
+</html>

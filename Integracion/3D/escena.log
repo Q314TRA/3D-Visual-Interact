@@ -1,0 +1,52 @@
+	Exporter version: 4.1.0, Blender version: 2.76 (sub 0)
+========= Conversion from Blender to Babylon.js =========
+	Scene settings used:
+		selected layers only:  false
+		flat shading entire scene:  false
+		inline textures:  false
+	Python World class constructor completed
+	WARNING: No active camera has been assigned, or is not in a currently selected Blender layer
+	processing begun of mesh:  partes_negras
+		processing begun of Standard material:  lambert1SG
+		num positions      :  2892
+		num normals        :  2892
+		num uvs            :  5784
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  10428
+	processing begun of mesh:  chaqueta
+		processing begun of Standard material:  blinn1SG
+		Diffuse texture found"Kd"
+			Image texture found, type:  diffuseTexture, mapped using: "UVMap"
+	Error encountered processing image file:  , Error:  [Errno 2] No such file or directory: 'C:\\Users\\Bertin\\Dropbox\\Proyectos 2016\\Visualizador Ropa\\Alpha_003\\3D\\Escena_Nueva\\..\\..\\..\\..\\..\\..\\..\\..\\polera_04_LIGHTBLUE.jpg'
+		Bump texture found"Bump"
+			Image texture found, type:  bumpTexture, mapped using: "UVMap"
+	Error encountered processing image file:  , Error:  [Errno 2] No such file or directory: 'C:\\Users\\Bertin\\Dropbox\\Proyectos 2016\\Visualizador Ropa\\Alpha_003\\3D\\Escena_Nueva\\..\\..\\..\\..\\..\\..\\..\\..\\normal map.jpg -bm 2.293233'
+		Specular texture found"Ks"
+			Image texture found, type:  specularTexture, mapped using: "UVMap"
+		num positions      :  11422
+		num normals        :  11422
+		num uvs            :  22844
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  56976
+	processing begun of mesh:  creamllera
+		processing begun of Standard material:  ___Default
+		num positions      :  125
+		num normals        :  125
+		num uvs            :  250
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  636
+	processing begun of mesh:  cierre_creamllera
+		registered as also a user of material:  ___Default
+		num positions      :  848
+		num normals        :  848
+		num uvs            :  1696
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  1998
+========= Writing of scene file started =========
+========= Writing of scene file completed =========
+========= end of processing =========
+elapsed time:  0 min, 1.3838 secs

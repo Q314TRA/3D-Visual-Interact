@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Clothing Vis</title>
+
+<style>
+  html, body {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+	background: #151515;
+  }
+
+  #wrapper {
+    height: 100%;
+    touch-action: none;
+	margin-right: auto;
+	margin-left: auto;
+	width: 800px;
+  }
+</style>
+<script>
+var capturar_imagen = function(ImageData, color1, color2, color3)
+{
+	VentanaNueva = window.open("about:blank", "Show Image", "width="+820 + ", height=" + 880);
+	var doc = VentanaNueva.document;
+	var imagen = doc.createElement("img");
+	imagen.src = ImageData.src;
+	doc.body.appendChild(imagen);
+	var divColor1 = doc.createElement("div");
+	divColor1.style.backgroundColor = color1;
+	divColor1.style.height = "20px";
+	divColor1.style.width = "800px";
+	divColor1.id = 'Color1';
+	doc.body.appendChild(divColor1);
+	var divColor2 = doc.createElement("div");
+	divColor2.style.backgroundColor = color2;
+	divColor2.style.height = "20px";
+	divColor2.style.width = "800px";
+	divColor2.id = 'Color2';
+	doc.body.appendChild(divColor2);
+	var divColor3 = doc.createElement("div");
+	divColor3.style.backgroundColor = color3;
+	divColor3.style.height = "20px";
+	divColor3.style.width = "800px";
+	divColor3.id = 'Color3';
+	doc.body.appendChild(divColor3);
+}
+</script>
+</head>
+<body>
+<div id="wrapper">
+<!-- <img src="img/encabezado.jpg"/> -->
+<iframe src="viz.html" style="width: 800px; height: 800px" marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0"></iframe>
+</div>
+</body>
+</html>

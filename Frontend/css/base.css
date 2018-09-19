@@ -1,0 +1,507 @@
+@import url(menu.css);
+@font-face{
+font-family: "CenturyGothic";
+src: url("../fonts/CenturyGothicRegular.ttf");
+}
+*{
+	padding: 0;
+	margin: 0;
+	font-family: "CenturyGothic";
+}
+img{
+	cursor: pointer;
+	cursor: hand;
+}
+.flex{
+	display: flex;
+}
+.fullCenter{
+	justify-content: center;
+	align-items: center;
+}
+.menuControles{
+    background: #3C3C3B;
+    width: 180px;
+    height: 100vh;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+.controles{
+	flex-flow: column wrap;
+}
+.controles > img{
+	max-width: 65px;
+	margin-top: 10px;
+}
+.controles > span{
+	color: #808080;
+    margin-top: 5px;
+    margin-bottom: 11px;
+}
+.espacio{
+	height: 230px;
+}
+.background{
+    width: 65px;
+    height: 65px;
+    background: #fff;
+    border-radius: 50%;
+    border: solid #808080;
+    cursor: hand;
+    cursor: pointer;
+    position: absolute;
+    bottom: 57px;
+}
+.backSpan{
+    margin-bottom: 12px;
+    color: #808080;
+    position: absolute;
+    bottom: 20px;
+}
+.btnHome, .logo{
+    position: absolute;
+    right: 50px;
+}
+.btnHome{
+    bottom: 0;
+}
+.logo{
+    width: 224px;
+    top: 20px;
+}
+.backgroundCambio{
+    display: none;
+    background: #2b2b2a;
+    height: 140px;
+    width: 80px;
+    position: absolute;
+    bottom: 14%;
+    left: 41px;
+    flex-flow: column;
+    border-radius: 8px;
+}
+.backgroundCambioActive{
+    display: flex;
+}
+.backCamb-col1, .backCamb-col2{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: hand; cursor: pointer;
+}
+.backCamb-col1{
+    background: #403c3c;
+    margin-bottom: 5px;
+}
+.backCamb-col2{
+    background: #696969;
+}
+.clrBlanco{
+    background: #fff;
+}
+.clrGris{
+    background: #696969;
+}
+.clrOscuro{
+    background: #403c3c;
+}
+/* Vitrina */
+.workSpace{
+    width: 100%;
+    height: 100vh;
+    flex-flow: column wrap;
+}
+.modelado{
+    width: 100%;
+    height: 76%;
+}   
+.opciones{
+    height: 24%;
+    width: 100%;
+}
+.itemOpciones{
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+    margin-left: 50px;
+}
+.itemOpciones > img{
+	width: 65px;
+}
+.modelado > img{
+    height: 600px;
+}
+.carusel > img{
+    width: 123px;
+    margin-right: 27px;
+}
+.plus{
+    background: transparent;
+    width: 240px;
+    height: 200px;
+    position: absolute;
+    top: 30%;
+    right: 25%;
+}
+.plus > i{
+    color: #fff;
+    background: #3C3C3B;
+    height: 27px;
+    width: 27px;
+    padding: 3px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.3em;
+    font-style: inherit;
+    margin-top: 15px;
+    cursor: hand; cursor: pointer;
+    transition: all 0.1s linear;
+}
+.plus > i:hover{
+   background: #999999;
+}
+.textoModal{
+    flex-flow: column;
+    margin-left: 30px;
+    visibility: hidden;
+}
+.textoModal > h4{
+    font-size: 1.7em;
+    color: #3C3C3B;
+    font-weight: 100;
+}
+.textoModal > span{
+    font-size: 1.25em;
+    color: #999999;
+}
+.textoModal > p{
+    font-size: 1em;
+    color: #999999;
+    margin-top: 12px;
+}
+.detalleTxt{
+    visibility: visible;
+}
+.customize{
+    border: solid #999999 2px;
+    border-radius: 14px;
+    padding: 10px 40px;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #999999;
+    margin-top: 25%;
+}
+/* Vitrina */
+
+/* Extras */
+.extras{
+    background: #3C3C3B;
+    width: 500px;
+    justify-content: space-between;
+    flex-flow: column wrap;
+    display: none;
+}
+.extras > .header > img{
+    width: 240px;
+    margin-top: 10px;
+}
+.shared{
+	flex-flow: column wrap;
+}
+.shared > img{
+    width: 272px;
+    margin-top: 16px;
+    height: 126px;
+}
+.btnShared{
+    background: #272724;
+    width: 153px;
+    height: 39px;
+    text-align: center;
+    padding-top: 9px;
+    text-decoration: blink;
+    color: #808080;
+    align-self: center;
+    font-size: 1.8em;
+    border-radius: 6px 6px 0px 0px;
+}
+.animShared{
+    animation: shared 1.25s cubic-bezier(0.19, 1, 0.22, 1) 1;
+    animation-fill-mode: forwards;
+    display: flex;
+
+}
+
+@keyframes shared {
+    0%{
+        visibility: hidden;
+        transform: translateX(180px);
+    }
+    100%{
+        visibility:visible;
+        transform: translateX(0); 
+    }
+}
+
+/* Paleta de colores */
+
+.paletaColores{
+    flex-flow: column;
+    justify-content: space-around;
+}
+.paletaColores, .logoImg, .textoDiv{
+    left: 160px;
+    background: #505050;
+    width: 20%;
+    height: 100%;
+    position: absolute;
+}
+.colores{
+    flex-flow: column;
+    margin-left: 10%;
+}
+.colores span{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    color: #808080;
+}
+.ruletaColor{
+    display: none;
+    position: absolute;
+    top: 25%;
+    margin-left: 35%;
+    flex-flow: row wrap;
+    background: #3C3C3B;
+    padding: 8px;
+    margin-right: 20px;
+    border-radius: 0 12px 12px 12px;
+}
+.rltClr{
+    display: flex;
+}
+.rlt{
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    margin-right: 3px;
+    margin-bottom: 2px;
+    cursor: hand;cursor: pointer;
+}
+.rltCol1{
+    background: #0D8E35;
+}
+.rltCol2{
+    background: #2A439E;
+}
+.rltCol3{
+    background: #9E387F;
+}
+.rltCol4{
+    background: #2064AB;
+}
+.rltCol5{
+    background: #C5B53C;
+}
+.rltCol6{
+    background: #A21313;
+}
+.rltCol7{
+    background: #fff;
+}
+.clr{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: solid #808080;
+    margin-bottom: 10px;
+    cursor: pointer; cursor: hand;
+}
+.color1{
+    background: #212020;
+}
+.color2{
+    background: #DCCD13;
+}
+.color3{
+    background: #334CFF;
+}
+.color4{
+    background: #fff;
+}
+.save{
+    border: solid;
+    width: 50%;
+    padding: 8px;
+    text-align: center;
+    font-size: 15pt;
+    color: #808080;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 13px;
+    align-self: flex-end;
+    margin-right: 20px;
+}
+.pclr{
+    display: none;
+}
+#yourBtn{
+    width: 50px;
+    padding: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    background-color: #999999;
+    cursor: pointer;
+    height: 50px;
+    border-radius: 50%;
+  }
+.logoImg{
+    flex-flow: column;
+    color: #999999;
+    justify-content: space-around;
+}
+.logoImg > form{
+    margin-left: 20%;
+}
+.explic{
+    padding: 10px;
+    background: #3C3C3B;
+    border-radius: 8px;
+    margin: 10px;
+}
+.lI{
+    display: none;
+}
+
+/* /Paleta de colores*/
+
+/* Texto Div */
+.textoDiv{
+    display: none;
+    flex-flow: column;
+    justify-content: center;
+    padding: 10px;
+}
+.txtArea{
+    border: none;
+    resize: none;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 12pt;
+}
+.styled-select {
+  background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+  height: 29px;
+  overflow: hidden;
+  width: 240px;
+}
+.styled-select select {
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  height: 29px;
+  padding: 5px;
+  /* If you add too much padding here, the options won't show in IE */
+  width: 268px;
+}
+.styled-select.slate {
+margin-top: 20px;
+  height: 34px;
+  width: 240px;
+}
+.styled-select.slate select {
+  font-size: 16px;
+  height: 34px;
+  width: 268px;
+}
+.slate {
+  background-color: #fff;
+}
+.slate select {
+  color: #808080;
+}
+.textoDiv span{
+    color: #808080;
+}
+.txtDivMost{
+    display: flex;
+}
+
+
+/* / Texto Div */
+
+/* Get free */
+
+.formFlex{
+    flex-flow: column;
+    width: 80%;
+    align-items: flex-end;
+}
+.getFree{
+    display: none;
+    height: 100%;
+    width: 20%;
+    background: #3C3C3B;
+    position: absolute;
+    right: 0;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.inputGet{
+    border: none;
+    height: 30px;
+    border-radius: 6px;
+    margin-bottom: 2px;
+    width: 100%;
+}
+.formFlex label{
+    color: #808080;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.getFreeVer{
+    display: flex;
+}
+/* Get free */
+
+.btnFinalizar{
+    border: solid #999999 2px;
+    border-radius: 14px;
+    padding: 10px 70px;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #999999;
+    margin-top: 300px;
+}
+.btnSend{
+    background: transparent;
+    color: #808080;
+    border: solid 2px #808080;
+    padding: 8px 9px;
+    font-size: 13pt;
+    text-align: right;
+    width: 175px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.btnSha2{
+    position: absolute;
+    bottom: 0;
+}
+.sendSuccess{
+    display: none;
+    position: absolute;
+    top: 40%;
+}
+.sendSuccessOc{
+    display: flex;
+    flex-flow:column;
+}
+.sendSuccess p, .sendSuccess h2{
+    text-align: center;
+    color: #8a8a89;
+}
+
+
+/* /Extras */

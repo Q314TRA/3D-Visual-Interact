@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Clothing Vis</title>
+
+<style>
+  html, body {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #renderCanvas {
+    width: 100%;
+    height: 100%;
+    touch-action: none;
+  }
+</style>
+	<script src="js/hand-1.3.7.js"></script>
+	<script src="js/babylon.2.2.js"></script>
+
+<!--
+	<script type="application/vertexShader" id="vShader">
+    </script>
+	<script type="application/fragmentShader" id="fShader">
+    </script>
+-->
+</head>
+
+<body>
+	<input id="ChangeColor1toGreen" type="button" value="Cambiar color 1 a verde" onclick="ChangeColor(3, 0, 1, 0);" />
+	<input id="ChangeBackground" type="button" value="Cambiar fondo a verde" onclick="BackGroundColor(0, 1, 0);" />
+	<input id="setpattern1" type="button" value="diseño 1" onclick="SetPattern(1);" />
+	<input id="setpattern2" type="button" value="diseño 2" onclick="SetPattern(2);" />
+	<input id="setpattern3" type="button" value="diseño 3" onclick="SetPattern(3);" />
+	<input id="setpattern4" type="button" value="diseño 4" onclick="SetPattern(4);" />
+	<input id="activatedecal1" type="button" value="poner imagen 1" onclick="ActivateDecal(1, '3D/texturas/logo.png');" />
+	<input id="activatedecal2" type="button" value="poner imagen 2" onclick="ActivateDecal(2, '3D/texturas/matCap2.jpg');" />
+	<input id="activatedecal3" type="button" value="poner imagen 3" onclick="ActivateDecal(3, '3D/texturas/matCap3.jpg');" />
+	<input id="activatedecal4" type="button" value="poner imagen 4" onclick="ActivateDecal(4, '3D/texturas/matCap4.jpg');" />
+	<!-- Codigos base de la aplicacion -->
+	<input type="file" id="selectorArchivos" multiple accept="image/*.jpg, *.png" style="display:none" onchange="subirArchivos(this.files)">
+	<input type="file" id="selectorArchivos1" multiple accept="image/*.jpg, *.png" style="display:none" onchange="subirArchivos1(this.files)">
+    <input type="file" id="selectorArchivos2" multiple accept="image/*.jpg, *.png" style="display:none" onchange="subirArchivos2(this.files)">
+    <input type="file" id="selectorArchivos3" multiple accept="image/*.jpg, *.png" style="display:none" onchange="subirArchivos3(this.files)">
+    <input type="file" id="selectorArchivos4" multiple accept="image/*.jpg, *.png" style="display:none" onchange="subirArchivos4(this.files)">
+    <input type="file" id="selectorArchivos5" multiple accept="image/*.jpg, *.png" style="display:none" onchange="subirArchivos5(this.files)">
+	<canvas id="renderCanvas"></canvas>
+	<script src="js/screenshot.js"></script>
+    <script src="js/rtt.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/upload.js"></script>
+    <script src="js/funciones_control.js"></script>
+	<!-- FIN Codigos base de la aplicacion -->
+</body>
+
+</html>

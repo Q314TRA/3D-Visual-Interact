@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+ 
+<html lang="es">
+ 
+<head>
+<title>Titulo de la web</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/responsive.css" />
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=0,maximum-scale=1,user-scalable=no">
+<!--
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="alternate" title="Pozolería RSS" type="application/rss+xml" href="/feed.rss" /> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+ 
+  <body>
+  <a href="#navigation" class="nav-triger">
+    menu <span></span>
+  </a>
+  <nav class="nav-container" id="navigation">
+    <ul class="nav">
+      <li><a onclick="subMenu();" >Race Line </a></li>
+
+      <div id="submenuDiv" class="submenu submenuO">
+        <li><a href="editar.html">Summer</a></li>
+        <li><a href="">Winter</a></li>
+      </div>
+
+      <li><a href="#0">Professional Line</a></li>
+      <li><a href="#0">Sport Line</a></li>
+      <li><a href="#0">Leisure Line</a></li>
+    </ul>
+  </nav>
+  <div class="overlay"></div>
+
+  <main class="flex">
+    <!-- Controles -->
+    <div class="menuControles flex">
+      <div class="controles flex fullCenter">
+        <img src="img/Boton_Text.svg">
+        <span>Colour Palette</span>
+        <img src="img/Boton_LogoImage.svg">
+        <span>Logo/Image</span>
+        <img src="img/Boton_ColourPalette.svg">
+        <span>Text</span>
+      </div>
+     <div class="background" id="backCont" onclick="backgroundColor();"></div>
+      <span class="backSpan">Background</span>
+    </div>
+    <div class="backgroundCambio flex fullCenter" id="backCambioColor">
+      <div class="backCamb-col1" id="clrOscuro" onclick="colorWorkSpaceOscuro();" ></div>
+      <div class="backCamb-col2" id="clrGris" onclick="colorWorkSpaceGris();"></div>
+    </div>
+    <!-- /Controles -->
+
+    <img class="logo" src="img/Logotipo_BR.svg">
+    <!-- Vitrina -->
+    <div class="flex workSpace" id="workspace">
+
+      <!-- Modelado -->
+      <div class="flex fullCenter modelado">
+        <img src="img/Chaqueta_Color.svg">
+      </div>
+      <!-- /Modelado -->
+
+      <!-- Opciones -->
+      <div class="flex fullCenter opciones">
+          <div class="flex itemOpciones">
+            <img onclick="getFree();" src="img/Boton_FreeQuote.svg">
+            <span>Get a Free<br>Quote</span>
+          </div>
+          <div class="flex itemOpciones">
+            <img src="img/Boton_SavePDF.svg">
+            <span>Download as<br>PDF</span>
+          </div>
+          <div class="flex itemOpciones">
+            <img onclick="openExtra();" src="img/Boton_Share.svg">
+            <span>Share</span>
+          </div>
+      </div>
+      <!-- /Opciones -->
+
+    </div>
+    <!-- / Vitrina -->
+
+    <!-- Extras -->
+    <div class="flex extras" id="extra">
+      <div class="flex fullCenter header">
+       <img src="img/Logotipo_BR.svg">
+      </div>
+      <div class="flex fullCenter shared">
+        <img src="img/Logo_Fb.svg">
+        <img src="img/Logo_Twitter.svg">
+      </div>
+      <a class="btnShared" href="">Design</a>
+    </div>
+    <!-- Extras -->
+
+    <!-- get free -->
+    <div class="flex getFree" id="getfree">
+       <img class="logo" src="img/Logotipo_BR.svg">
+      <form class="flex formFlex" id="formSucc">
+        <input class="inputGet" type="text">
+        <label>Name</label>
+        <input class="inputGet" type="text">
+        <label>Last Name</label>
+        <input class="inputGet" type="text">
+        <label>Email</label>
+        <input class="inputGet" type="text">
+        <label>Quantity</label>
+        <input  class="btnSend" onclick="sendSucess();"  value="SEND YOUR REQUEST">
+      </form>
+      <div class="sendSuccess flex" id="sendSuc">
+        <h2>THANK YOU!</h2><br>
+        <p>We will get back to you as soon as possible</p>
+      </div>
+
+      <a class="btnShared btnSha2" href="">Design</a>
+    </div>
+    <!-- /get free -->
+
+  </main>
+
+
+
+
+  <script>
+    var navTrigger = document.getElementsByClassName('nav-triger')[0],
+      body = document.getElementsByTagName('body')[0];
+    navTrigger.addEventListener('click', toggleNavigation);
+
+    function toggleNavigation(event) {
+      event.preventDefault();
+      body.classList.toggle('nav-open');
+    }
+  </script>
+  <script type="text/javascript" src="js/funciones.js"></script>
+  </body>
+</html>

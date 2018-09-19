@@ -1,0 +1,46 @@
+	Exporter version: 4.1.0, Blender version: 2.76 (sub 0)
+========= Conversion from Blender to Babylon.js =========
+	Scene settings used:
+		selected layers only:  false
+		flat shading entire scene:  false
+		inline textures:  false
+	Python World class constructor completed
+	processing begun of mesh:  camiseta
+		processing begun of Standard material:  tela
+		num positions      :  3076
+		num normals        :  3076
+		num uvs            :  6152
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  12822
+	processing begun of mesh:  partes_negras
+		processing begun of Standard material:  Negro
+		num positions      :  884
+		num normals        :  884
+		num uvs            :  1768
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  2526
+	processing begun of mesh:  cierre_creamllera
+		processing begun of Standard material:  Metal_Gris
+		num positions      :  849
+		num normals        :  849
+		num uvs            :  1698
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  1998
+	processing begun of mesh:  creamllera
+		registered as also a user of material:  Negro
+		num positions      :  230
+		num normals        :  230
+		num uvs            :  460
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  900
+	processing begun of camera (FreeCamera):  Camera
+	processing begun of light (HEMI):  Hemi
+	processing begun of light (SUN):  Sun
+========= Writing of scene file started =========
+========= Writing of scene file completed =========
+========= end of processing =========
+elapsed time:  0 min, 0.3975 secs

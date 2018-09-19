@@ -1,0 +1,58 @@
+@media screen and (max-width: 1500px)  {
+	.btnHome, .logo{
+		right: 39px;
+	}
+	.paletaColores, .logoImg, .textoDiv{
+		left: 155px;
+	}
+}
+@media screen and (max-width: 1460px)  {
+	.btnHome, .logo{
+		right: 29px;
+	}
+	.paletaColores, .logoImg, .textoDiv{
+		left: 150px;
+		width: 26%;
+	}
+}
+@media screen and (max-width: 932px)  {
+	.nav-triger{
+		top: 35px;
+		left: 38px;
+
+	}
+	.controles > img{
+		max-width: 50px;
+	}
+	.controles > span, .backSpan{
+		font-size: 10pt;
+	}
+	.menuControles{
+		width: 135px;
+	}
+	.background {
+	    width: 50px;
+	    height: 50px;
+	}
+	.backgroundCambio{
+	    height: 120px;
+   		width: 64px;
+        left: 28px;
+	}
+	.carusel{
+		display: none;
+	}
+	.modelado{
+		flex-flow:column;
+	}
+	.btnFinalizar, .customize{
+		margin-top: 2px;
+	}
+	.paletaColores, .logoImg, .textoDiv{
+		left: 114px;
+		width: 34%;
+	}
+	.getFree{
+		width: 37%;
+	}
+}
